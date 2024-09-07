@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+  :root {
+    --primary-color: rgb(71, 5, 66);
+    --secondary-color: rgb(142, 41, 146);
+  }
+
+  body {
+    background-color: var(--primary-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Noto Sans Arabic", sans-serif;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 800px;
+  }
+
+  header {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  .add-task-button {
+    border-radius: 50%;
+    padding: 3px 10px;
+    background-color: white;
+    color: var(--secondary-color);
+    border: none;
+    cursor: cell;
+    margin-left: 15px;
+    font-size: 20px;
+  }
+
+  .add-task-button:hover {
+    background-color: #f0f0f0;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 35px;
+    margin: auto;
+  }
+
+  main {
+    margin-top: 20px;
+  }
+
+  .task {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .task-details {
+    color: black;
+    text-align: right;
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+
+  .task-actions button {
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .delete-button {
+    background-color: darkred;
+  }
+
+  .done-button {
+    background-color: darkgreen;
+  }
+
+  .edit-button {
+    background-color: darkblue;
+  }
+
+  button {
+    border: none;
+    color: white;
+    border-radius: 100%;
+    padding: 3px 10px;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .done {
+    background-color: rgb(161, 218, 156);
+  }
+
+  .done .task-details {
+    text-decoration: line-through;
+  }
+
+  .cancel {
+    background-color: white;
+  }
